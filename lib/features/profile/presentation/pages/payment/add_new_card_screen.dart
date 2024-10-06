@@ -1,4 +1,5 @@
 import 'package:e_learning_app/core/cach_helper.dart';
+import 'package:e_learning_app/core/utils/extensions/sized_box_extensions.dart';
 import 'package:e_learning_app/core/utils/widgets/CustomFormField.dart';
 import 'package:e_learning_app/core/utils/widgets/custom_button.dart';
 import 'package:e_learning_app/features/profile/presentation/pages/payment/card_item.dart';
@@ -25,7 +26,7 @@ class AddNewCardScreen extends StatelessWidget {
               const CardItem(),
               const SizedBox(height: 20),
               Text(S.of(context).card_name,
-                  style: Theme.of(context).textTheme.bodyMedium),
+                  style: Theme.of(context).textTheme.bodySmall),
               const SizedBox(height: 8),
               CustomFormField(
                 controller: nameController,
@@ -35,7 +36,7 @@ class AddNewCardScreen extends StatelessWidget {
                 sizedBoxHeight: 20,
               ),
               Text(S.of(context).card_number,
-                  style: Theme.of(context).textTheme.bodyMedium),
+                  style: Theme.of(context).textTheme.bodySmall),
               const SizedBox(height: 8),
               CustomFormField(
                 controller: nameController,
@@ -52,7 +53,7 @@ class AddNewCardScreen extends StatelessWidget {
                       children: [
                         Text(
                           S.of(context).expiry_date,
-                          style: Theme.of(context).textTheme.bodyMedium,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 8),
                         CustomFormField(
@@ -64,14 +65,14 @@ class AddNewCardScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(width: 20),
+                  20.sizedBoxWidth,
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           S.of(context).cvv,
-                          style: Theme.of(context).textTheme.bodyMedium,
+                          style: Theme.of(context).textTheme.bodySmall,
                         ),
                         const SizedBox(height: 8),
                         CustomFormField(

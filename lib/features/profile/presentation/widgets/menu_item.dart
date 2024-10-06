@@ -35,7 +35,7 @@ class MenuItem extends StatelessWidget {
             menuModel.title,
             style: Theme.of(context)
                 .textTheme
-                .bodyMedium!
+                .titleMedium!
                 .copyWith(color: isDifferent ? const Color(0xfff75555) : null),
           ),
           const Expanded(child: SizedBox()),

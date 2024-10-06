@@ -22,17 +22,13 @@ class ProfileScreenBody extends StatelessWidget {
             Text(
               'Andrew Ainsley',
               style: Theme.of(context)
-                  .textTheme
-                  .titleMedium!
-                  .copyWith(fontWeight: FontWeight.w500),
+                  .textTheme.titleMedium,
             ),
             10.h.sizedBoxHeight,
             Text(
               'andrew_ainsley@yourdomain.com',
               style: Theme.of(context)
-                  .textTheme
-                  .titleSmall!
-                  .copyWith(fontWeight: FontWeight.w500),
+                  .textTheme.titleSmall,
             ),
             20.h.sizedBoxHeight,
             const Divider(color: Color(0xfff6f6f6), height: 0.5, thickness: 1),

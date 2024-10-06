@@ -18,8 +18,10 @@ class CountryPickerContainer extends StatelessWidget {
           context: context,
           countryListTheme: CountryListThemeData(
             flagSize: 25.r,
-            backgroundColor: Colors.white,
-            textStyle: TextStyle(fontSize: 16.sp, color: Colors.blueGrey),
+            backgroundColor: CachHelper.getData(key: 'isDark')
+                ? const Color(0xff1f222a)
+                : const Color(0xfffafafa),
+            textStyle: Theme.of(context).textTheme.bodySmall,
             bottomSheetHeight: 500.h,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(20.0.r),
@@ -54,7 +56,7 @@ class CountryPickerContainer extends StatelessWidget {
         ),
         child: Row(
           children: [
-            Text(country, style: Theme.of(context).textTheme.bodyMedium),
+            Text(country, style: Theme.of(context).textTheme.bodySmall),
             const Spacer(),
             const Icon(FontAwesomeIcons.caretDown),
           ],

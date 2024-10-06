@@ -26,7 +26,7 @@ class GenderPickerContainer extends StatelessWidget {
         dropdownColor: backgroundColor,
         iconEnabledColor: Theme.of(context).iconTheme.color,
         borderRadius: BorderRadius.circular(12),
-        style: Theme.of(context).textTheme.bodyMedium,
+        style: Theme.of(context).textTheme.bodySmall,
         icon: const Icon(FontAwesomeIcons.caretDown),
         value: selectedValue,
         isExpanded: true,

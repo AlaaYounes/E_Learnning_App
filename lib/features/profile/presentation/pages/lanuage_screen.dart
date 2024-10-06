@@ -4,6 +4,8 @@ import 'package:e_learning_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../config/themes/colors.dart';
+
 class LanguageScreen extends StatelessWidget {
   LanguageScreen({super.key});
 
@@ -27,13 +29,13 @@ class LanguageScreen extends StatelessWidget {
                 child: ListTile(
                   title: Text(
                     S.of(context).english,
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   trailing: Visibility(
                       visible: !cubit.isArabic,
                       child: const Icon(
                         Icons.check,
-                        color: Color(0xff335ef7),
+                        color: AppColor.mainBlue,
                       )),
                 ),
               ),
@@ -44,7 +46,7 @@ class LanguageScreen extends StatelessWidget {
                 child: ListTile(
                   title: Text(
                     S.of(context).arabic,
-                    style: Theme.of(context).textTheme.bodyMedium,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   trailing: Visibility(
                     visible: cubit.isArabic,

@@ -18,7 +18,7 @@ class _NotificationsOptionsItemState extends State<NotificationsOptionsItem> {
     return ListTile(
       title: Text(
         widget.title,
-        style: Theme.of(context).textTheme.bodyMedium,
+        style: Theme.of(context).textTheme.bodySmall,
       ),
       trailing: Switch(
         inactiveThumbColor: const Color(0xffffffff),

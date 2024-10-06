@@ -1,5 +1,5 @@
+import 'package:e_learning_app/config/themes/app_fonts.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton(
@@ -29,10 +29,7 @@ class CustomButton extends StatelessWidget {
         alignment: AlignmentDirectional.center,
         child: Text(
           text,
-          style: Theme.of(context)
-              .textTheme
-              .titleSmall!
-              .copyWith(fontWeight: FontWeight.w500, color: Colors.white),
+          style: TextStyles.font16WhiteSemiBold,
         ),
       ),
     );

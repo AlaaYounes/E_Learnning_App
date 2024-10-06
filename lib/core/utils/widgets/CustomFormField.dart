@@ -42,7 +42,7 @@ class CustomFormField extends StatelessWidget {
     return Column(
       children: [
         TextFormField(
-          style: Theme.of(context).textTheme.bodyMedium,
+          style: Theme.of(context).textTheme.bodySmall,
           onTapOutside: onTapOutside,
           validator: validator,
           maxLines: maxLines,
@@ -55,6 +55,7 @@ class CustomFormField extends StatelessWidget {
             hintStyle: Theme.of(context)
                 .textTheme
                 .bodySmall!
+                .copyWith(color: Colors.grey)
                 .copyWith(color: const Color(0xffAAAAAA)),
             fillColor: backgroundColor,
             filled: true,

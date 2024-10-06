@@ -1,3 +1,4 @@
+import 'package:e_learning_app/config/themes/app_fonts.dart';
 import 'package:e_learning_app/core/cach_helper.dart';
 import 'package:e_learning_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -24,15 +25,10 @@ class PaymentItem extends StatelessWidget {
           leading: icon,
           title: Text(
             title,
-            style: Theme.of(context).textTheme.bodyMedium,
+            style: Theme.of(context).textTheme.titleMedium,
           ),
-          trailing: Text(
-            S.of(context).connected,
-            style: Theme.of(context)
-                .textTheme
-                .bodySmall!
-                .copyWith(color: const Color(0xff335ef7)),
-          ),
+          trailing: Text(S.of(context).connected,
+              style: TextStyles.font14BlueSemiBold),
         ),
       ),
     );

@@ -37,24 +37,11 @@ class MainApp extends StatelessWidget {
                 designSize: const Size(428, 926),
                 minTextAdapt: true,
                 splitScreenMode: true,
-                // Use builder only if you need to use library outside ScreenUtilInit context
                 builder: (_, child) {
                   return MaterialApp(
                     debugShowCheckedModeBanner: false,
-                    title: 'First Method',
-                    // You can use the library anywhere in the app even in theme
-                    theme: ThemeData(
-                      primarySwatch: Colors.blue,
-                      textTheme: Typography.englishLike2018
-                          .apply(fontSizeFactor: 1.sp),
-                    ),
-                    home: child,
-                  );
-                },
-                child: MaterialApp(
-                    debugShowCheckedModeBanner: false,
-                    theme: lighttheme,
-                    darkTheme: darktheme,
+                    theme: lightTheme,
+                    darkTheme: darkTheme,
                     themeMode: context.watch<ThemeCubit>().isDark
                         ? ThemeMode.dark
                         : ThemeMode.light,
@@ -66,7 +53,9 @@ class MainApp extends StatelessWidget {
                       GlobalCupertinoLocalizations.delegate,
                     ],
                     supportedLocales: S.delegate.supportedLocales,
-                    home: const ProfileScreen()),
+                    home: const ProfileScreen(),
+                  );
+                },
               );
             },
           );

@@ -11,57 +11,6 @@ class MobileFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return PhoneTextField(
-    //   locale: const Locale('en'),
-    //   searchTextStyle: Theme.of(context).textTheme.bodySmall,
-    //   decoration: InputDecoration(
-    //     filled: true,
-    //     enabled: true,
-    //     fillColor: const Color(0xfffafafa),
-    //     focusedBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.circular(10),
-    //       borderSide: const BorderSide(color: Color(0xfffafafa)),
-    //     ),
-    //     border: OutlineInputBorder(
-    //       borderRadius: BorderRadius.circular(10),
-    //       borderSide: const BorderSide(color: Color(0xfffafafa)),
-    //     ),
-    //     disabledBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.circular(10),
-    //       borderSide: const BorderSide(color: Color(0xfffafafa)),
-    //     ),
-    //     enabledBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.circular(10),
-    //       borderSide: const BorderSide(color: Color(0xfffafafa)),
-    //     ),
-    //     focusedErrorBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.circular(10),
-    //       borderSide: const BorderSide(color: Color(0xfffafafa)),
-    //     ),
-    //     errorBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.circular(10),
-    //       borderSide: const BorderSide(color: Color(0xfffafafa)),
-    //     ),
-    //   ),
-    //   textStyle: Theme.of(context).textTheme.bodySmall,
-    //   searchFieldInputDecoration: const InputDecoration(
-    //     filled: true,
-    //     enabledBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-    //       borderSide: BorderSide(),
-    //     ),
-    //     focusedBorder: OutlineInputBorder(
-    //       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-    //     ),
-    //     suffixIcon: Icon(Icons.search),
-    //     hintText: "Search country",
-    //   ),
-    //
-    //   initialCountryCode: "AE",
-    //   onChanged: (phone) {
-    //     debugPrint(phone.completeNumber);
-    //   },
-    // );
     return IntlPhoneField(
       controller: controller,
       style: Theme.of(context).textTheme.bodySmall,

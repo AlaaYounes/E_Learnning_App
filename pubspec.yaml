@@ -35,5 +35,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+
 flutter_intl:
   enabled: true
