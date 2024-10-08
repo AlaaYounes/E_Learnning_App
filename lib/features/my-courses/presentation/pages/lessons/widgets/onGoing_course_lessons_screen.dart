@@ -15,22 +15,27 @@ class OngoingCourseLessonsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('3D Design Illustration'),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.separated(
-                itemBuilder: (context, index) => const LessonCardWidget(),
-                separatorBuilder: (context, index) => 15.sizedBoxHeight,
-                itemCount: 10),
-          ),
-          Container(
-            padding: EdgeInsets.only(top: 20.h),
-            child: const CustomButton(
-                backgroundColor: AppColor.buttonColor,
-                width: double.infinity,
-                text: 'Continue Course'),
-          ),
-        ],
+      body: Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: 20.w,
+        ),
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView.separated(
+                  itemBuilder: (context, index) => const LessonCardWidget(),
+                  separatorBuilder: (context, index) => 15.sizedBoxHeight,
+                  itemCount: 10),
+            ),
+            Container(
+              padding: EdgeInsets.only(top: 20.h),
+              child: const CustomButton(
+                  backgroundColor: AppColor.buttonColor,
+                  width: double.infinity,
+                  text: 'Continue Course'),
+            ),
+          ],
+        ),
       ),
     );
   }
